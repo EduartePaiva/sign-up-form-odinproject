@@ -3,26 +3,45 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+:root {
+    --logo-size: min(100px, 15vw);
+    --r-size: 45vw;
+}
+
 body {
     margin: 0;
     padding: 0;
     width: 100%;
+    min-height: 100vh;
     display: flex;
 }
 
 .right-side {
-    flex: 0.55;
+    width: var(--r-size);
 }
 
-.form-side {
-    flex: 1;
-}
+.form-side {}
 
 .odin-logo {
     font-family: odin-font;
+    color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-size: var(--logo-size);
+    width: var(--r-size);
+    top: 50vh;
+    transform: translate(0, -50%);
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.468);
 }
 
-img {
+.odin-logo img {
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+.img-bg {
     width: 100%;
     height: 100%;
     object-fit: cover;
