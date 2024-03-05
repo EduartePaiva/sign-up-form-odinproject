@@ -1,0 +1,29 @@
+@font-face {
+    font-family: odin-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+}
+
+.right-side {
+    flex: 0.55;
+}
+
+.form-side {
+    flex: 1;
+}
+
+.odin-logo {
+    font-family: odin-font;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
