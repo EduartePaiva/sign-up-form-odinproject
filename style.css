@@ -10,14 +10,20 @@
 
 :root {
     --logo-size: min(100px, 15vw);
-    --r-size: 40vw;
+    --r-size: 35vw;
+    --btn-color: #596D48;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    background-color: hsl(0, 0%, 98%);
     min-height: 100vh;
+    width: 100%;
     display: flex;
     font-family: roboto-google, monospace, sans-serif;
 }
@@ -25,7 +31,8 @@ body {
 .left-side {
     width: var(--r-size);
     flex-shrink: 0;
-
+    flex-grow: 0;
+    flex-basis: auto;
 }
 
 .odin-logo {
@@ -48,17 +55,36 @@ body {
     height: var(--logo-size);
 }
 
-.img-bg {
-    width: 100%;
+.img-div {
     height: 100%;
-    object-fit: cover;
+    overflow: hidden;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
+
+.credits {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.credits a {
+    color: #fff;
+}
+
+
 
 /* Right side  */
 
 .form-side {
-    background-color: rgb(245, 255, 255);
+    background-color: hsl(0, 0%, 98%);
     padding: 150px 0;
+    flex: 1;
 }
 
 .meaningless-text {
@@ -121,10 +147,20 @@ label input:focus {
     margin: 26px 36px;
     padding: 12px 46px;
     color: white;
-    background-color: #596D48;
+    background-color: var(--btn-color);
     font-size: 1rem;
     font-weight: 700;
     border: none;
     border-radius: 8px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.203);
+}
+
+.have-account {
+    margin: 26px 36px;
+}
+
+.have-account a {
+    text-decoration: none;
+    color: var(--btn-color);
+    font-weight: 700;
 }
