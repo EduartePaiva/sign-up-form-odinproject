@@ -12,6 +12,7 @@
     --logo-size: min(100px, 15vw);
     --r-size: 35vw;
     --btn-color: #596D48;
+    --error-color: #b30000;
 }
 
 body,
@@ -155,6 +156,10 @@ label input:focus {
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.203);
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 .have-account {
     margin: 26px 36px;
 }
@@ -168,5 +173,14 @@ label input:focus {
 /* Password styling */
 
 .error {
-    border: 1px solid hsl(0, 100%, 35%);
+    border: 1px solid var(--error-color);
+}
+
+#error {
+    color: var(--error-color);
+    font-weight: normal;
+    letter-spacing: normal;
+    position: absolute;
+    margin-top: 42px;
+    display: none;
 }

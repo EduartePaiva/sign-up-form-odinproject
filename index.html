@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,8 @@
             <span class="">ODIN</span>
         </div>
         <div class="img-div">
-            <span class="credits">Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></span>
+            <span class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a>
+                on <a href="https://unsplash.com/" target="_blank">Unsplash</a></span>
         </div>
     </div>
     <div class="form-side">
@@ -56,13 +58,14 @@
                     <li>
                         <label for="password">
                             <span>PASSWORD</span>
-                            <input class="error" type="password" name="password" id="password">
+                            <input class="" type="password" name="password" id="password">
+                            <span id="error">* Passwords do not match</span>
                         </label>
                     </li>
                     <li>
                         <label for="confirm_password">
                             <span>CONFIRM PASSWORD</span>
-                            <input class="error" type="password" name="confirm_password" id="confirm_password">
+                            <input class="" type="password" name="confirm_password" id="confirm_password">
                         </label>
                     </li>
                 </ul>
