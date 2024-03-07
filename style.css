@@ -164,3 +164,9 @@ label input:focus {
     color: var(--btn-color);
     font-weight: 700;
 }
+
+/* Password styling */
+
+.error {
+    border: 1px solid hsl(0, 100%, 35%);
+}
